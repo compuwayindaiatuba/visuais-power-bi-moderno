@@ -141,3 +141,12 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Editor local
+.vscode/
+
+# Arquivos gerados pelo pbiviz
+webpack.statistics*.html
+
+# Copias manuais temporarias
+* - Copia.txt
