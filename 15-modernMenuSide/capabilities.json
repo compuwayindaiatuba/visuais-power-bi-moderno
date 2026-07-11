@@ -1,0 +1,794 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Ordem",
+      "name": "order",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Categoria / Grupo",
+      "name": "category",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Nome do botao",
+      "name": "label",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Icone",
+      "name": "icon",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "LinkDestino / ID da pagina",
+      "name": "targetUrl",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Tema por dados",
+      "name": "theme",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "Geral",
+      "properties": {
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        }
+      }
+    },
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "expandedWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "collapsedWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "marginTop": {
+          "type": {
+            "integer": true
+          }
+        },
+        "marginRight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "marginBottom": {
+          "type": {
+            "integer": true
+          }
+        },
+        "marginLeft": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "borderWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "theme": {
+      "displayName": "Tema",
+      "properties": {
+        "themeSource": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Formatacao",
+                "value": "settings"
+              },
+              {
+                "displayName": "Tabela",
+                "value": "data"
+              }
+            ]
+          }
+        },
+        "themeMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Claro",
+                "value": "light"
+              },
+              {
+                "displayName": "Escuro",
+                "value": "dark"
+              }
+            ]
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "darkBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "darkBorderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "darkTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "darkMutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "header": {
+      "displayName": "Topo e logo",
+      "properties": {
+        "showLogo": {
+          "type": {
+            "bool": true
+          }
+        },
+        "logoUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoText": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoFontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "logoTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "brandText": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "logoHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "collapsedLogoUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "collapsedLogoWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "collapsedLogoHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "logoRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "brandFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "brandGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "headerBottomMargin": {
+          "type": {
+            "integer": true
+          }
+        },
+        "logoToButtonsGap": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "user": {
+      "displayName": "Usuario",
+      "properties": {
+        "showUser": {
+          "type": {
+            "bool": true
+          }
+        },
+        "userName": {
+          "type": {
+            "text": true
+          }
+        },
+        "userSubtitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "userImageUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "userTopMargin": {
+          "type": {
+            "integer": true
+          }
+        },
+        "userBottomMargin": {
+          "type": {
+            "integer": true
+          }
+        },
+        "userWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "avatarSize": {
+          "type": {
+            "integer": true
+          }
+        },
+        "userNameFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "userSubtitleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "search": {
+      "displayName": "Pesquisa",
+      "properties": {
+        "showSearch": {
+          "type": {
+            "bool": true
+          }
+        },
+        "placeholder": {
+          "type": {
+            "text": true
+          }
+        },
+        "height": {
+          "type": {
+            "integer": true
+          }
+        },
+        "topMargin": {
+          "type": {
+            "integer": true
+          }
+        },
+        "bottomMargin": {
+          "type": {
+            "integer": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "darkBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "buttonStyle": {
+      "displayName": "Botoes",
+      "properties": {
+        "buttonHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "buttonGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "buttonRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "iconSize": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "textAlign": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Esquerda",
+                "value": "left"
+              },
+              {
+                "displayName": "Centro",
+                "value": "center"
+              },
+              {
+                "displayName": "Direita",
+                "value": "right"
+              }
+            ]
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "hoverBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "activeBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "activeIconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "activeTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "activeState": {
+      "displayName": "Destaque",
+      "properties": {
+        "activeMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Nome informado",
+                "value": "manual"
+              },
+              {
+                "displayName": "Ultimo clique",
+                "value": "lastClick"
+              }
+            ]
+          }
+        },
+        "activePageName": {
+          "type": {
+            "text": true
+          }
+        },
+        "exactMatch": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "groupStyle": {
+      "displayName": "Grupos",
+      "properties": {
+        "showGroups": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "lineColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "topSpacing": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "footer": {
+      "displayName": "Rodape",
+      "properties": {
+        "showFooterImage": {
+          "type": {
+            "bool": true
+          }
+        },
+        "footerImageUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "footerImageHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "footerTopMargin": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "interaction": {
+      "displayName": "Interacao",
+      "properties": {
+        "collapsible": {
+          "type": {
+            "bool": true
+          }
+        },
+        "startCollapsed": {
+          "type": {
+            "bool": true
+          }
+        },
+        "useSelection": {
+          "type": {
+            "bool": true
+          }
+        },
+        "clickAction": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Selecionar",
+                "value": "select"
+              },
+              {
+                "displayName": "Abrir URL",
+                "value": "url"
+              }
+            ]
+          }
+        },
+        "reportBaseUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "urlCompletionMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "LinkDestino + URL base",
+                "value": "rowUrl"
+              },
+              {
+                "displayName": "Nome/ID no caminho",
+                "value": "path"
+              },
+              {
+                "displayName": "Parametro pageName",
+                "value": "pageName"
+              },
+              {
+                "displayName": "Marcador {page}",
+                "value": "placeholder"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "order": {
+            "max": 1
+          },
+          "category": {
+            "max": 1
+          },
+          "label": {
+            "min": 1,
+            "max": 1
+          },
+          "icon": {
+            "max": 1
+          },
+          "targetUrl": {
+            "max": 1
+          },
+          "theme": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "order"
+              }
+            },
+            {
+              "for": {
+                "in": "category"
+              }
+            },
+            {
+              "for": {
+                "in": "label"
+              }
+            },
+            {
+              "for": {
+                "in": "icon"
+              }
+            },
+            {
+              "for": {
+                "in": "targetUrl"
+              }
+            },
+            {
+              "for": {
+                "in": "theme"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "label",
+      "category",
+      "targetUrl"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": [
+        "*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="2" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DCE4F1"/>
+      <stop offset="1" stop-color="#D6DDEA"/>
+    </linearGradient>
+    <linearGradient id="scrollGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E4E4E7"/>
+      <stop offset="1" stop-color="#D9D9DE"/>
+    </linearGradient>
+    <linearGradient id="scrollThumb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8A8AE"/>
+      <stop offset="1" stop-color="#8E8E95"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="3" y1="3" x2="5" y2="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD95A"/>
+      <stop offset="1" stop-color="#F4B23F"/>
+    </linearGradient>
+    <linearGradient id="pedestalGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B56A7C"/>
+      <stop offset="1" stop-color="#8A556F"/>
+    </linearGradient>
+    <linearGradient id="circleBlue" x1="5" y1="8" x2="8" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C7DAFB"/>
+      <stop offset="1" stop-color="#ADC7F7"/>
+    </linearGradient>
+    <linearGradient id="circleGreen" x1="5" y1="10" x2="8" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#CDEDD4"/>
+      <stop offset="1" stop-color="#B5E3C1"/>
+    </linearGradient>
+    <linearGradient id="circlePurple" x1="5" y1="13" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E4D8FB"/>
+      <stop offset="1" stop-color="#D5C2F5"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer table card -->
+  <rect x="1.2" y="3.0" width="17.0" height="12.8" rx="1.0"
+        fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.72"/>
+
+  <!-- Trophy -->
+  <path d="M3.25 4.55 H4.25 V5.1
+           C4.25 5.6 3.9 5.98 3.45 6.08
+           C3.0 5.98 2.65 5.6 2.65 5.1 V4.55 H3.25 Z"
+        fill="url(#goldGrad)"/>
+  <path d="M2.62 4.78
+           C2.15 4.72 2.02 5.25 2.35 5.52
+           C2.5 5.65 2.7 5.7 2.88 5.68"
+        stroke="url(#goldGrad)" stroke-width="0.18" stroke-linecap="round"/>
+  <path d="M4.28 4.78
+           C4.75 4.72 4.88 5.25 4.55 5.52
+           C4.4 5.65 4.2 5.7 4.02 5.68"
+        stroke="url(#goldGrad)" stroke-width="0.18" stroke-linecap="round"/>
+  <rect x="3.23" y="6.05" width="0.44" height="0.23" rx="0.06" fill="url(#goldGrad)"/>
+  <rect x="2.9" y="6.28" width="1.08" height="0.28" rx="0.06" fill="url(#pedestalGrad)"/>
+  <rect x="3.15" y="6.37" width="0.58" height="0.09" rx="0.03" fill="#F2C94C"/>
+
+  <!-- Main title bar -->
+  <rect x="5.6" y="4.58" width="5.4" height="0.56" rx="0.28" fill="url(#darkGrad)"/>
+
+  <!-- Sort arrow -->
+  <path d="M16.95 4.25 V5.55 M16.55 5.15 L16.95 5.55 L17.35 5.15"
+        stroke="url(#blueGrad)" stroke-width="0.28" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Column header bars -->
+  <rect x="3.0" y="6.55" width="1.8" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+  <rect x="5.85" y="6.55" width="2.35" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+  <rect x="12.8" y="6.55" width="2.55" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+
+  <!-- Divider header -->
+  <path d="M2.7 7.65 H16.2" stroke="url(#lineGrad)" stroke-width="0.16" stroke-linecap="round"/>
+
+  <!-- Row 1 -->
+  <text x="3.5" y="9.7" font-family="Arial, Helvetica, sans-serif" font-size="0.95" fill="#1F2937" text-anchor="middle">1</text>
+  <circle cx="6.45" cy="9.15" r="0.88" fill="url(#circleBlue)"/>
+  <rect x="8.0" y="8.95" width="2.55" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+  <rect x="12.8" y="8.95" width="2.95" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+
+  <!-- Divider row 1 -->
+  <path d="M2.75 10.55 H16.2" stroke="url(#lineGrad)" stroke-width="0.16" stroke-linecap="round"/>
+
+  <!-- Row 2 -->
+  <text x="3.5" y="12.25" font-family="Arial, Helvetica, sans-serif" font-size="0.95" fill="#1F2937" text-anchor="middle">2</text>
+  <circle cx="6.45" cy="11.7" r="0.88" fill="url(#circleGreen)"/>
+  <rect x="8.0" y="11.5" width="2.55" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+  <rect x="12.8" y="11.5" width="2.95" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+
+  <!-- Divider row 2 -->
+  <path d="M2.75 13.1 H13.5" stroke="url(#lineGrad)" stroke-width="0.16" stroke-linecap="round"/>
+
+  <!-- Row 3 -->
+  <text x="3.5" y="14.8" font-family="Arial, Helvetica, sans-serif" font-size="0.95" fill="#1F2937" text-anchor="middle">3</text>
+  <circle cx="6.45" cy="14.25" r="0.88" fill="url(#circlePurple)"/>
+  <rect x="8.0" y="14.05" width="2.55" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+  <rect x="12.8" y="14.05" width="1.2" height="0.42" rx="0.21" fill="url(#darkGrad)"/>
+
+  <!-- Scrollbar -->
+  <rect x="16.75" y="7.5" width="0.36" height="7.15" rx="0.18" fill="url(#scrollGrad)"/>
+  <rect x="16.72" y="7.55" width="0.42" height="2.5" rx="0.21" fill="url(#scrollThumb)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.65" cy="14.35" r="2.05" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.54"/>
+  <path d="M17.25 13.42
+           A1.63 1.63 0 1 0 17.25 15.28
+           L16.52 14.74
+           A0.75 0.75 0 1 1 16.52 13.96
+           Z"
+        fill="url(#orangeGrad)"/>
+  <circle cx="15.65" cy="14.35" r="0.43" fill="url(#orangeGrad)"/>
+</svg>

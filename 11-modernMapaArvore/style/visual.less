@@ -1,0 +1,234 @@
+.modern-mapaview-host {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.modern-mapaview-host * {
+    box-sizing: border-box;
+}
+
+.mmv-root {
+    --mmv-bg: #ffffff;
+    --mmv-border: #e6eaf2;
+    --mmv-font: "Segoe UI";
+    --mmv-padding: 24px;
+    --mmv-radius: 20px;
+    --mmv-shadow: 0 18px 44px rgba(15, 23, 42, 0.1);
+
+    color: #101828;
+    font-family: var(--mmv-font), "Segoe UI", sans-serif;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mmv-card {
+    background: var(--mmv-bg);
+    border: 1px solid var(--mmv-border);
+    border-radius: var(--mmv-radius);
+    box-shadow: var(--mmv-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    padding: var(--mmv-padding);
+    width: 100%;
+}
+
+.mmv-header {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+    min-height: 0;
+    min-width: 0;
+}
+
+.mmv-heading {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    min-width: 0;
+}
+
+.mmv-header-icon {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex: 0 0 58px;
+    height: 58px;
+    justify-content: center;
+    width: 58px;
+}
+
+.mmv-header-icon svg {
+    height: 33px;
+    width: 33px;
+}
+
+.mmv-heading-text {
+    min-width: 0;
+}
+
+.mmv-title {
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mmv-subtitle {
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.25;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mmv-total-card {
+    align-items: center;
+    border: 1px solid #e2e7f0;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.035);
+    display: flex;
+    flex: 0 0 auto;
+    gap: 18px;
+    min-width: 220px;
+    padding: 15px 16px 15px 20px;
+}
+
+.mmv-total-content {
+    min-width: 0;
+}
+
+.mmv-total-title {
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mmv-total-value {
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1.1;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mmv-dots {
+    align-items: center;
+    border: 1px solid #edf1f7;
+    border-radius: 11px;
+    display: flex;
+    flex: 0 0 37px;
+    height: 37px;
+    justify-content: center;
+    width: 37px;
+}
+
+.mmv-dots svg {
+    height: 21px;
+    width: 21px;
+}
+
+.mmv-chart {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mmv-svg {
+    display: block;
+    height: 100%;
+    overflow: visible;
+    width: 100%;
+}
+
+.mmv-block rect {
+    filter: drop-shadow(0 12px 20px rgba(15, 23, 42, 0.09));
+    transition: filter 140ms ease, transform 140ms ease;
+}
+
+.mmv-block:hover rect {
+    filter: drop-shadow(0 16px 26px rgba(15, 23, 42, 0.15));
+}
+
+.mmv-block-text {
+    font-family: var(--mmv-font), "Segoe UI", sans-serif;
+    letter-spacing: 0;
+    pointer-events: none;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+}
+
+.mmv-footer {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    line-height: 1.25;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.mmv-footer span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mmv-info {
+    align-items: center;
+    border: 1.7px solid currentColor;
+    border-radius: 999px;
+    display: inline-flex;
+    flex: 0 0 18px;
+    font-size: 12px;
+    font-weight: 800;
+    height: 18px;
+    justify-content: center;
+    line-height: 1;
+    width: 18px;
+}
+
+.mmv-empty {
+    align-items: center;
+    color: #667085;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 13px;
+    justify-content: center;
+    min-height: 0;
+    padding: 18px;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .mmv-card {
+        gap: 16px;
+    }
+
+    .mmv-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .mmv-total-card {
+        min-width: 0;
+        width: 100%;
+    }
+}

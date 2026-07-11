@@ -1,0 +1,446 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Linhas",
+      "name": "rows",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Colunas",
+      "name": "columns",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Valores",
+      "name": "values",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "showHeader": {
+          "type": {
+            "bool": true
+          }
+        },
+        "titleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "subtitleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "matrixStyle": {
+      "displayName": "Matriz",
+      "properties": {
+        "headerBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "rowHeaderBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "stripeBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "subtotalBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "grandTotalBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "accentColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gridColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "headerFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "rowHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "rowHeaderMinWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "valueColumnMinWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showZebraRows": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showGrid": {
+          "type": {
+            "bool": true
+          }
+        },
+        "stickyHeader": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "valuesFormat": {
+      "displayName": "Valores",
+      "properties": {
+        "formatType": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "percentDecimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "displayUnits": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Nenhum",
+                "value": "none"
+              },
+              {
+                "displayName": "Mil",
+                "value": "thousand"
+              },
+              {
+                "displayName": "Milhao",
+                "value": "million"
+              },
+              {
+                "displayName": "Bilhao",
+                "value": "billion"
+              }
+            ]
+          }
+        },
+        "currencySymbol": {
+          "type": {
+            "text": true
+          }
+        },
+        "blankValueText": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "totals": {
+      "displayName": "Totais",
+      "properties": {
+        "showGrandTotal": {
+          "type": {
+            "bool": true
+          }
+        },
+        "grandTotalLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "showSubtotals": {
+          "type": {
+            "bool": true
+          }
+        },
+        "subtotalLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "showRowTotal": {
+          "type": {
+            "bool": true
+          }
+        },
+        "rowTotalLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "showPercentOfTotal": {
+          "type": {
+            "bool": true
+          }
+        },
+        "percentTotalLabel": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "behavior": {
+      "displayName": "Interacao",
+      "properties": {
+        "enableSelection": {
+          "type": {
+            "bool": true
+          }
+        },
+        "enableContextMenu": {
+          "type": {
+            "bool": true
+          }
+        },
+        "enableExpandCollapse": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "rows": {
+            "min": 1,
+            "max": 10
+          },
+          "columns": {
+            "max": 10
+          },
+          "values": {
+            "max": 30
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "matrix": {
+        "rows": {
+          "for": {
+            "in": "rows"
+          },
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 3000
+            }
+          }
+        },
+        "columns": {
+          "for": {
+            "in": "columns"
+          },
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 300
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "for": {
+                "in": "values"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "rows",
+      "columns",
+      "values"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "drilldown": {
+    "roles": [
+      "rows"
+    ]
+  },
+  "expandCollapse": {
+    "roles": [
+      "rows"
+    ],
+    "addDataViewFlags": {
+      "defaultValue": true
+    }
+  },
+  "privileges": []
+}

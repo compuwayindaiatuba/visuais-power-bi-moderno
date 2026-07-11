@@ -1,0 +1,265 @@
+.modern-area-host {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.modern-area-host * {
+    box-sizing: border-box;
+}
+
+.mag-root {
+    --mag-axis: #5d668a;
+    --mag-bg: #ffffff;
+    --mag-border: #e9ecf5;
+    --mag-border-width: 1px;
+    --mag-font: "Segoe UI";
+    --mag-grid: #e9ecf5;
+    --mag-padding: 22px;
+    --mag-radius: 12px;
+    --mag-shadow: 0 16px 34px rgba(19, 28, 69, 0.08);
+    --mag-title: #141d45;
+
+    color: var(--mag-title);
+    font-family: var(--mag-font), "Segoe UI", sans-serif;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mag-card {
+    background: var(--mag-bg);
+    border: var(--mag-border-width) solid var(--mag-border);
+    border-radius: var(--mag-radius);
+    box-shadow: var(--mag-shadow);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    padding: var(--mag-padding);
+    width: 100%;
+}
+
+.mag-header {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    min-height: 0;
+}
+
+.mag-header:empty {
+    display: none;
+}
+
+.mag-title {
+    flex: 1 1 auto;
+    line-height: 1.2;
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mag-selector {
+    appearance: none;
+    background: #f8f9fe;
+    border: 1px solid var(--mag-border);
+    border-radius: 8px;
+    color: var(--mag-title);
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 650;
+    max-width: 190px;
+    min-width: 116px;
+    outline: 0;
+    padding: 7px 28px 7px 10px;
+    position: relative;
+}
+
+.mag-selector:focus {
+    box-shadow: 0 0 0 2px rgba(102, 82, 240, 0.18);
+}
+
+.mag-legend {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-bottom: 10px;
+    min-height: 0;
+}
+
+.mag-legend-bottom {
+    margin: 10px 0 0;
+}
+
+.mag-legend-item {
+    align-items: center;
+    color: var(--mag-axis);
+    display: inline-flex;
+    font-weight: 600;
+    gap: 6px;
+    min-width: 0;
+}
+
+.mag-legend-dot {
+    border-radius: 999px;
+    flex: 0 0 9px;
+    height: 9px;
+    width: 9px;
+}
+
+.mag-legend-label {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mag-panels {
+    display: grid;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.mag-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    min-width: 0;
+}
+
+.mag-panel-title {
+    color: var(--mag-title);
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mag-chart-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    position: relative;
+}
+
+.mag-svg {
+    display: block;
+    height: 100%;
+    overflow: visible;
+    width: 100%;
+}
+
+.mag-grid-line {
+    stroke: var(--mag-grid);
+    stroke-width: 1;
+}
+
+.mag-axis-label,
+.mag-endpoint-text {
+    fill: var(--mag-axis);
+    font-weight: 650;
+}
+
+.mag-axis-title {
+    fill: var(--mag-title);
+    font-weight: 750;
+}
+
+.mag-area {
+    pointer-events: none;
+}
+
+.mag-line {
+    fill: none;
+    pointer-events: none;
+}
+
+.mag-marker {
+    cursor: default;
+}
+
+.mag-hit-line {
+    fill: none;
+    pointer-events: stroke;
+    stroke: transparent;
+}
+
+.mag-hit-point {
+    fill: transparent;
+    pointer-events: all;
+    stroke: transparent;
+}
+
+.mag-endpoint-box {
+    fill: #f7f5ff;
+    stroke-width: 1;
+}
+
+.mag-tooltip {
+    background: #ffffff;
+    border: 1px solid var(--mag-border);
+    border-radius: 9px;
+    box-shadow: 0 12px 28px rgba(19, 28, 69, 0.16);
+    color: var(--mag-title);
+    font-size: 12px;
+    left: 0;
+    line-height: 1.25;
+    max-width: 220px;
+    opacity: 0;
+    padding: 9px 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    transition: opacity 120ms ease;
+    z-index: 3;
+}
+
+.mag-tooltip-visible {
+    opacity: 1;
+}
+
+.mag-tooltip-title {
+    font-weight: 750;
+    margin-bottom: 4px;
+}
+
+.mag-tooltip-value {
+    color: var(--mag-axis);
+    font-weight: 650;
+}
+
+.mag-tooltip-extra {
+    color: var(--mag-axis);
+    margin-top: 5px;
+    white-space: pre-line;
+}
+
+.mag-empty {
+    align-items: center;
+    color: var(--mag-axis);
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 13px;
+    justify-content: center;
+    line-height: 1.35;
+    min-height: 0;
+    padding: 16px;
+    text-align: center;
+}

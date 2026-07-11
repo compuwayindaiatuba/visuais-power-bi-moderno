@@ -1,0 +1,556 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Categorias",
+      "name": "category",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "ID Categoria",
+      "name": "categoryId",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "ID Categoria Img",
+      "name": "imageId",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Link Img",
+      "name": "imageUrl",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Legenda",
+      "name": "legend",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Multiplos pequenos",
+      "name": "smallMultiples",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Valores",
+      "name": "values",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Dicas de ferramentas",
+      "name": "tooltips",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "titleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "showTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "maxItems": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showSortButton": {
+          "type": {
+            "bool": true
+          }
+        },
+        "defaultSort": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Maior primeiro",
+                "value": "desc"
+              },
+              {
+                "displayName": "Menor primeiro",
+                "value": "asc"
+              },
+              {
+                "displayName": "Sem ordenar",
+                "value": "none"
+              }
+            ]
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "chart": {
+      "displayName": "Grafico",
+      "properties": {
+        "mode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Empilhado",
+                "value": "stacked"
+              },
+              {
+                "displayName": "Clusterizado",
+                "value": "clustered"
+              },
+              {
+                "displayName": "100% empilhado",
+                "value": "stacked100"
+              }
+            ]
+          }
+        },
+        "barShape": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Arredondado",
+                "value": "rounded"
+              },
+              {
+                "displayName": "Pill",
+                "value": "pill"
+              },
+              {
+                "displayName": "Reto",
+                "value": "flat"
+              },
+              {
+                "displayName": "Piramide",
+                "value": "pyramid"
+              }
+            ]
+          }
+        },
+        "radiusMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Todas as pontas",
+                "value": "all"
+              },
+              {
+                "displayName": "Somente ponta final",
+                "value": "outer"
+              },
+              {
+                "displayName": "Sem arredondar",
+                "value": "none"
+              }
+            ]
+          }
+        },
+        "barRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "barHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "rowGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "clusterGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "categoryWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "valueWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showTrack": {
+          "type": {
+            "bool": true
+          }
+        },
+        "trackColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "showAxis": {
+          "type": {
+            "bool": true
+          }
+        },
+        "axisColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "labels": {
+      "displayName": "Rotulos",
+      "properties": {
+        "showCategoryLabels": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showValues": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showImages": {
+          "type": {
+            "bool": true
+          }
+        },
+        "imageSize": {
+          "type": {
+            "integer": true
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "valueFormat": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "currencySymbol": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "legendStyle": {
+      "displayName": "Legenda",
+      "properties": {
+        "showLegend": {
+          "type": {
+            "bool": true
+          }
+        },
+        "position": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Topo",
+                "value": "top"
+              },
+              {
+                "displayName": "Rodape",
+                "value": "bottom"
+              },
+              {
+                "displayName": "Oculta",
+                "value": "hidden"
+              }
+            ]
+          }
+        },
+        "itemGap": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "smallMultipleStyle": {
+      "displayName": "Multiplos pequenos",
+      "properties": {
+        "columns": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showTitles": {
+          "type": {
+            "bool": true
+          }
+        },
+        "panelGap": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "colors": {
+      "displayName": "Cores",
+      "properties": {
+        "usePalette": {
+          "type": {
+            "bool": true
+          }
+        },
+        "startColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "endColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "secondStartColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "secondEndColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "category": {
+            "max": 1
+          },
+          "categoryId": {
+            "max": 1
+          },
+          "imageId": {
+            "max": 1
+          },
+          "imageUrl": {
+            "max": 1
+          },
+          "legend": {
+            "max": 1
+          },
+          "smallMultiples": {
+            "max": 1
+          },
+          "values": {
+            "max": 20
+          },
+          "menu": {
+            "max": 1
+          },
+          "tooltips": {
+            "max": 20
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "category"
+              }
+            },
+            {
+              "for": {
+                "in": "categoryId"
+              }
+            },
+            {
+              "for": {
+                "in": "imageId"
+              }
+            },
+            {
+              "for": {
+                "in": "imageUrl"
+              }
+            },
+            {
+              "for": {
+                "in": "legend"
+              }
+            },
+            {
+              "for": {
+                "in": "smallMultiples"
+              }
+            },
+            {
+              "for": {
+                "in": "values"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "tooltips",
+      "category",
+      "values"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": [
+        "*"
+      ]
+    }
+  ]
+}

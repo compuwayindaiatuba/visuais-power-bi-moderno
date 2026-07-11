@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "cpwModernMenuSide",
+    "displayName": "CPW Modern Menu Side",
+    "guid": "cpwModernMenuSide",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Compuway menu lateral moderno com navegacao por botoes, icones e filtro nativo.",
+    "supportUrl": "https://compuwayead.com.br/power-bi/custom-visual",
+    "gitHubUrl": "https://github.com/compuwayindaiatuba/visuais-power-bi-moderno"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Igor Gabriel Tonchichi",
+    "email": "igorgabrielton@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.svg"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}

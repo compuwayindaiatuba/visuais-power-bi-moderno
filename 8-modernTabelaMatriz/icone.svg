@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="1" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFBFD"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="4" y1="5" x2="13" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6ECF6"/>
+      <stop offset="1" stop-color="#DCE4F0"/>
+    </linearGradient>
+    <linearGradient id="cellGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF3FB"/>
+      <stop offset="1" stop-color="#E4EBF6"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer card -->
+  <rect x="1.15" y="1.2" width="17.7" height="17.2" rx="1.0" fill="url(#panelGrad)" stroke="#E9EAF2" stroke-width="0.12"/>
+
+  <!-- Title -->
+  <rect x="2.2" y="2.2" width="5.9" height="0.68" rx="0.2" fill="url(#darkGrad)"/>
+  <rect x="2.2" y="3.95" width="2.7" height="0.32" rx="0.12" fill="url(#darkGrad)" opacity="0.95"/>
+  <rect x="9.85" y="3.95" width="3.4" height="0.32" rx="0.12" fill="url(#darkGrad)" opacity="0.95"/>
+
+  <!-- Matrix area frame -->
+  <rect x="2.25" y="5.2" width="11.9" height="9.2" rx="0.36" fill="#FFFFFF" stroke="url(#lineGrad)" stroke-width="0.10"/>
+
+  <!-- Top header row -->
+  <rect x="4.35" y="5.55" width="2.2" height="1.05" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+  <rect x="6.9" y="5.55" width="2.2" height="1.05" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+  <rect x="9.45" y="5.55" width="2.2" height="1.05" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+  <rect x="12.0" y="5.55" width="1.8" height="1.05" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+
+  <!-- Left header column -->
+  <rect x="2.6" y="6.95" width="1.35" height="1.55" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+  <rect x="2.6" y="8.85" width="1.35" height="1.55" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+  <rect x="2.6" y="10.75" width="1.35" height="1.55" rx="0.18" fill="url(#blueGrad)" opacity="0.18"/>
+
+  <!-- Matrix cells row 1 -->
+  <rect x="4.35" y="6.95" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="6.9" y="6.95" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="9.45" y="6.95" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="12.0" y="6.95" width="1.8" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+
+  <!-- Matrix cells row 2 -->
+  <rect x="4.35" y="8.85" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="6.9" y="8.85" width="2.2" height="1.55" rx="0.18" fill="url(#blueGrad)" opacity="0.92"/>
+  <rect x="9.45" y="8.85" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="12.0" y="8.85" width="1.8" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+
+  <!-- Matrix cells row 3 -->
+  <rect x="4.35" y="10.75" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="6.9" y="10.75" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="9.45" y="10.75" width="2.2" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+  <rect x="12.0" y="10.75" width="1.8" height="1.55" rx="0.18" fill="url(#cellGrad)"/>
+
+  <!-- Inner dividers feel -->
+  <path d="M4.15 6.75H13.9" stroke="url(#lineGrad)" stroke-width="0.08" stroke-linecap="round"/>
+  <path d="M4.15 8.65H13.9" stroke="url(#lineGrad)" stroke-width="0.08" stroke-linecap="round"/>
+  <path d="M4.15 10.55H13.9" stroke="url(#lineGrad)" stroke-width="0.08" stroke-linecap="round"/>
+
+  <!-- Tiny header labels -->
+  <rect x="4.78" y="5.92" width="1.28" height="0.18" rx="0.09" fill="url(#blueGrad)"/>
+  <rect x="7.33" y="5.92" width="1.28" height="0.18" rx="0.09" fill="url(#blueGrad)"/>
+  <rect x="9.88" y="5.92" width="1.28" height="0.18" rx="0.09" fill="url(#blueGrad)"/>
+  <rect x="12.25" y="5.92" width="1.1" height="0.18" rx="0.09" fill="url(#blueGrad)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.7" cy="14.95" r="2.0" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.54"/>
+  <path d="M17.27 14.04 A1.58 1.58 0 1 0 17.27 15.84 L16.57 15.32 A0.72 0.72 0 1 1 16.57 14.56 Z" fill="url(#orangeGrad)"/>
+  <circle cx="15.7" cy="14.95" r="0.42" fill="url(#orangeGrad)"/>
+</svg>

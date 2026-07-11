@@ -1,0 +1,471 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Categoria",
+      "name": "category",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Valor",
+      "name": "measure",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Data",
+      "name": "date",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Icone",
+      "name": "icon",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "Geral",
+      "properties": {
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        }
+      }
+    },
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "visualMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Blocos",
+                "value": "blocks"
+              },
+              {
+                "displayName": "Lista",
+                "value": "list"
+              },
+              {
+                "displayName": "Suspensa",
+                "value": "dropdown"
+              },
+              {
+                "displayName": "Linha do tempo",
+                "value": "timeline"
+              }
+            ]
+          }
+        },
+        "title": {
+          "type": {
+            "text": true
+          }
+        },
+        "subtitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "showHeader": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showToolbar": {
+          "type": {
+            "bool": true
+          }
+        },
+        "columnCount": {
+          "type": {
+            "integer": true
+          }
+        },
+        "maxItems": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "behavior": {
+      "displayName": "Comportamento",
+      "properties": {
+        "multiSelect": {
+          "type": {
+            "bool": true
+          }
+        },
+        "searchEnabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showValues": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showIcons": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSelectedCount": {
+          "type": {
+            "bool": true
+          }
+        },
+        "sortBy": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Ordem do modelo",
+                "value": "source"
+              },
+              {
+                "displayName": "Nome A-Z",
+                "value": "labelAsc"
+              },
+              {
+                "displayName": "Nome Z-A",
+                "value": "labelDesc"
+              },
+              {
+                "displayName": "Valor maior-menor",
+                "value": "valueDesc"
+              },
+              {
+                "displayName": "Valor menor-maior",
+                "value": "valueAsc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "style": {
+      "displayName": "Estilo",
+      "properties": {
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "accentColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedFillColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "itemBorderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "itemRadius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "padding": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "itemSpacing": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "fontWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "400"
+              },
+              {
+                "displayName": "Medio",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "600"
+              },
+              {
+                "displayName": "Bold",
+                "value": "700"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "timeline": {
+      "displayName": "Linha do tempo",
+      "properties": {
+        "showHistogram": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showAllPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showTodayPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showOneDayPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSevenDaysPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showOneMonthPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showThreeMonthsPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSixMonthsPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showOneYearPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showCustomPeriod": {
+          "type": {
+            "bool": true
+          }
+        },
+        "rangeFillColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "barColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "inactiveBarColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "category": {
+            "min": 1,
+            "max": 1
+          },
+          "measure": {
+            "max": 1
+          },
+          "date": {
+            "max": 1
+          },
+          "icon": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          }
+        },
+        {
+          "category": {
+            "max": 1
+          },
+          "measure": {
+            "max": 1
+          },
+          "date": {
+            "min": 1,
+            "max": 1
+          },
+          "icon": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "for": {
+                "in": "category"
+              }
+            },
+            {
+              "for": {
+                "in": "date"
+              }
+            },
+            {
+              "for": {
+                "in": "icon"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 1000
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "measure"
+              }
+            },
+            {
+              "bind": {
+                "to": "menu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "supportsHighlight": true,
+  "supportsKeyboardFocus": true,
+  "supportsLandingPage": true,
+  "supportsEmptyDataView": true,
+  "supportsMultiVisualSelection": true,
+  "supportsSynchronizingFilterState": true,
+  "privileges": []
+}

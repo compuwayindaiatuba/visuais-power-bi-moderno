@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="1" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFBFD"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="2" y1="3" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="softBlue" x1="3" y1="5" x2="9" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EEF4FF"/>
+      <stop offset="1" stop-color="#E1ECFF"/>
+    </linearGradient>
+    <linearGradient id="mutedGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6ECF6"/>
+      <stop offset="1" stop-color="#DCE4F0"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer app card -->
+  <rect x="1.15" y="1.2" width="17.7" height="17.2" rx="1.0" fill="url(#panelGrad)" stroke="#E9EAF2" stroke-width="0.12"/>
+
+  <!-- Side navigation panel -->
+  <path d="M2.0 2.2C2.0 1.85 2.28 1.55 2.65 1.55H6.25V18.05H2.65C2.28 18.05 2.0 17.76 2.0 17.4V2.2Z" fill="url(#darkGrad)"/>
+
+  <!-- Brand circle at top -->
+  <circle cx="4.12" cy="3.45" r="0.9" fill="#FFFFFF" opacity="0.96"/>
+  <path d="M4.82 3.05A0.72 0.72 0 1 0 4.82 3.86L4.5 3.62A0.33 0.33 0 1 1 4.5 3.28Z" fill="url(#orangeGrad)"/>
+  <circle cx="4.12" cy="3.45" r="0.19" fill="url(#orangeGrad)"/>
+
+  <!-- Active item pill -->
+  <rect x="2.55" y="5.2" width="3.15" height="1.5" rx="0.42" fill="url(#blueGrad)"/>
+  <rect x="3.1" y="5.72" width="0.5" height="0.5" rx="0.1" fill="#FFFFFF"/>
+  <rect x="3.9" y="5.78" width="1.1" height="0.22" rx="0.11" fill="#FFFFFF"/>
+
+  <!-- Other menu items -->
+  <rect x="3.05" y="7.85" width="0.44" height="0.44" rx="0.09" fill="#B7C3D5"/>
+  <rect x="3.9" y="7.96" width="1.15" height="0.2" rx="0.1" fill="#CBD3DF"/>
+
+  <rect x="3.05" y="9.65" width="0.44" height="0.44" rx="0.09" fill="#B7C3D5"/>
+  <rect x="3.9" y="9.76" width="1.0" height="0.2" rx="0.1" fill="#CBD3DF"/>
+
+  <rect x="3.05" y="11.45" width="0.44" height="0.44" rx="0.09" fill="#B7C3D5"/>
+  <rect x="3.9" y="11.56" width="1.25" height="0.2" rx="0.1" fill="#CBD3DF"/>
+
+  <rect x="3.05" y="13.25" width="0.44" height="0.44" rx="0.09" fill="#B7C3D5"/>
+  <rect x="3.9" y="13.36" width="0.95" height="0.2" rx="0.1" fill="#CBD3DF"/>
+
+  <!-- Bottom settings -->
+  <circle cx="3.28" cy="16.18" r="0.28" stroke="#B7C3D5" stroke-width="0.12" fill="none"/>
+  <circle cx="3.28" cy="16.18" r="0.08" fill="#B7C3D5"/>
+  <rect x="3.9" y="16.08" width="1.0" height="0.2" rx="0.1" fill="#CBD3DF"/>
+
+  <!-- Main content header -->
+  <rect x="7.25" y="2.35" width="4.7" height="0.6" rx="0.2" fill="url(#darkGrad)"/>
+  <rect x="7.25" y="3.45" width="7.5" height="0.22" rx="0.11" fill="url(#mutedGrad)"/>
+
+  <!-- Content cards -->
+  <rect x="7.25" y="5.0" width="4.2" height="2.3" rx="0.4" fill="url(#softBlue)" stroke="#D8E5FB" stroke-width="0.08"/>
+  <rect x="7.75" y="5.55" width="1.7" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="7.75" y="6.1" width="2.5" height="0.18" rx="0.09" fill="#94B6FA"/>
+
+  <rect x="11.8" y="5.0" width="4.9" height="2.3" rx="0.4" fill="#F6F4FF" stroke="#E5DCF9" stroke-width="0.08"/>
+  <rect x="12.3" y="5.55" width="1.85" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="12.3" y="6.1" width="2.8" height="0.18" rx="0.09" fill="#B39CF7"/>
+
+  <!-- Content rows -->
+  <rect x="7.25" y="8.15" width="9.45" height="1.25" rx="0.3" fill="#F7F9FC" stroke="#E7EBF3" stroke-width="0.06"/>
+  <rect x="7.7" y="8.62" width="2.2" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="10.55" y="8.64" width="4.8" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+
+  <rect x="7.25" y="9.85" width="9.45" height="1.25" rx="0.3" fill="#F7F9FC" stroke="#E7EBF3" stroke-width="0.06"/>
+  <rect x="7.7" y="10.32" width="2.5" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="10.85" y="10.34" width="4.5" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+
+  <rect x="7.25" y="11.55" width="9.45" height="1.25" rx="0.3" fill="#F7F9FC" stroke="#E7EBF3" stroke-width="0.06"/>
+  <rect x="7.7" y="12.02" width="2.0" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="10.35" y="12.04" width="5.0" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.7" cy="15.25" r="2.0" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.54"/>
+  <path d="M17.27 14.34 A1.58 1.58 0 1 0 17.27 16.14 L16.57 15.62 A0.72 0.72 0 1 1 16.57 14.86 Z" fill="url(#orangeGrad)"/>
+  <circle cx="15.7" cy="15.25" r="0.42" fill="url(#orangeGrad)"/>
+</svg>

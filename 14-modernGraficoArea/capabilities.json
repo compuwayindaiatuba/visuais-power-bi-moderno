@@ -1,0 +1,702 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Categoria",
+      "name": "category",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Valores",
+      "name": "values",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Valores secundarios",
+      "name": "secondaryValues",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Legenda",
+      "name": "legend",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Multiplos pequenos",
+      "name": "smallMultiples",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Dicas de ferramentas",
+      "name": "tooltips",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "title": {
+      "displayName": "Titulo grafico",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "text": {
+          "type": {
+            "text": true
+          }
+        },
+        "color": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "fontWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "650"
+              },
+              {
+                "displayName": "Bold",
+                "value": "750"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "chart": {
+      "displayName": "Grafico",
+      "properties": {
+        "chartType": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Area",
+                "value": "area"
+              },
+              {
+                "displayName": "Area empilhada",
+                "value": "stacked"
+              },
+              {
+                "displayName": "Area 100% empilhada",
+                "value": "stacked100"
+              }
+            ]
+          }
+        },
+        "lineShape": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Suave",
+                "value": "smooth"
+              },
+              {
+                "displayName": "Ponta aguda",
+                "value": "straight"
+              }
+            ]
+          }
+        },
+        "curveTension": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showEndpointLabel": {
+          "type": {
+            "bool": true
+          }
+        },
+        "endpointFormat": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual 0-100",
+                "value": "percent"
+              },
+              {
+                "displayName": "Percentual decimal 0-1",
+                "value": "percentFraction"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "valuePrefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "valueSuffix": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "areaStyle": {
+      "displayName": "Area e linha",
+      "properties": {
+        "useGradient": {
+          "type": {
+            "bool": true
+          }
+        },
+        "areaOpacity": {
+          "type": {
+            "integer": true
+          }
+        },
+        "lineWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "useSingleColor": {
+          "type": {
+            "bool": true
+          }
+        },
+        "singleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "singleGradientColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color1": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor1": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color2": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor2": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color3": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor3": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color4": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor4": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color5": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor5": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color6": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor6": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "markers": {
+      "displayName": "Marcadores",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "shape": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Circulo",
+                "value": "circle"
+              },
+              {
+                "displayName": "Quadrado",
+                "value": "square"
+              },
+              {
+                "displayName": "Diamante",
+                "value": "diamond"
+              },
+              {
+                "displayName": "Oculto",
+                "value": "none"
+              }
+            ]
+          }
+        },
+        "size": {
+          "type": {
+            "integer": true
+          }
+        },
+        "borderWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fillColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "axis": {
+      "displayName": "Eixos",
+      "properties": {
+        "showX": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showY": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSecondaryY": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showGrid": {
+          "type": {
+            "bool": true
+          }
+        },
+        "gridColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "labelColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "xLabelStep": {
+          "type": {
+            "integer": true
+          }
+        },
+        "xLabelRotation": {
+          "type": {
+            "integer": true
+          }
+        },
+        "xLabelMaxLength": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showXTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "xTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "showYTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "yTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "showSecondaryTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "secondaryTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "yMin": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "yMax": {
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "legendStyle": {
+      "displayName": "Legenda",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "position": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Topo",
+                "value": "top"
+              },
+              {
+                "displayName": "Rodape",
+                "value": "bottom"
+              },
+              {
+                "displayName": "Oculta",
+                "value": "hidden"
+              }
+            ]
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "smallMultipleStyle": {
+      "displayName": "Multiplos pequenos",
+      "properties": {
+        "columns": {
+          "type": {
+            "integer": true
+          }
+        },
+        "gap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showTitles": {
+          "type": {
+            "bool": true
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "category": {
+            "max": 2
+          },
+          "values": {
+            "max": 20
+          },
+          "secondaryValues": {
+            "max": 10
+          },
+          "legend": {
+            "max": 1
+          },
+          "smallMultiples": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          },
+          "tooltips": {
+            "max": 20
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "category"
+              }
+            },
+            {
+              "for": {
+                "in": "legend"
+              }
+            },
+            {
+              "for": {
+                "in": "smallMultiples"
+              }
+            },
+            {
+              "for": {
+                "in": "values"
+              }
+            },
+            {
+              "for": {
+                "in": "secondaryValues"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "category",
+      "values",
+      "secondaryValues",
+      "legend",
+      "tooltips"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": []
+}

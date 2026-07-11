@@ -1,0 +1,486 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Titulo",
+      "name": "title",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Subtitulo",
+      "name": "subtitle",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Icone",
+      "name": "icon",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu invisivel",
+      "name": "menuVisibility",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "Geral",
+      "properties": {
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        }
+      }
+    },
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "height": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "paddingX": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "paddingY": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "gap": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "logo": {
+      "displayName": "Logo",
+      "properties": {
+        "showLogo": {
+          "type": {
+            "bool": true
+          }
+        },
+        "logoUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoText": {
+          "type": {
+            "text": true
+          }
+        },
+        "logoPosition": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Esquerda",
+                "value": "left"
+              },
+              {
+                "displayName": "Direita",
+                "value": "right"
+              }
+            ]
+          }
+        },
+        "logoAlign": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Inicio",
+                "value": "flex-start"
+              },
+              {
+                "displayName": "Centro",
+                "value": "center"
+              },
+              {
+                "displayName": "Fim",
+                "value": "flex-end"
+              }
+            ]
+          }
+        },
+        "logoWidth": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "logoHeight": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "logoBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "logoTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "displayName": "Texto superior",
+      "properties": {
+        "showTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSubtitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "textAlign": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Esquerda",
+                "value": "left"
+              },
+              {
+                "displayName": "Centro",
+                "value": "center"
+              },
+              {
+                "displayName": "Direita",
+                "value": "right"
+              }
+            ]
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "subtitleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "titleSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "subtitleSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "titleWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "400"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "600"
+              },
+              {
+                "displayName": "Bold",
+                "value": "700"
+              }
+            ]
+          }
+        },
+        "textMaxWidth": {
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "buttons": {
+      "displayName": "Botoes",
+      "properties": {
+        "buttonAlign": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Esquerda",
+                "value": "flex-start"
+              },
+              {
+                "displayName": "Centro",
+                "value": "center"
+              },
+              {
+                "displayName": "Direita",
+                "value": "flex-end"
+              },
+              {
+                "displayName": "Espacado",
+                "value": "space-between"
+              }
+            ]
+          }
+        },
+        "buttonStyle": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Linha inferior",
+                "value": "underline"
+              },
+              {
+                "displayName": "Pill",
+                "value": "pill"
+              },
+              {
+                "displayName": "Simples",
+                "value": "simple"
+              }
+            ]
+          }
+        },
+        "showIcons": {
+          "type": {
+            "bool": true
+          }
+        },
+        "buttonHeight": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonRadius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonGap": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonPaddingX": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "buttonTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "buttonBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "buttonBorderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "accentColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconSize": {
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "menu": {
+            "min": 1,
+            "max": 1
+          },
+          "title": {
+            "max": 1
+          },
+          "subtitle": {
+            "max": 1
+          },
+          "icon": {
+            "max": 1
+          },
+          "menuVisibility": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "title"
+              }
+            },
+            {
+              "for": {
+                "in": "subtitle"
+              }
+            },
+            {
+              "for": {
+                "in": "icon"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 500
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "menuVisibility"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "supportsKeyboardFocus": true,
+  "supportsLandingPage": true,
+  "supportsEmptyDataView": true,
+  "supportsMultiVisualSelection": true,
+  "supportsSynchronizingFilterState": true,
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": [
+        "https://*"
+      ]
+    }
+  ]
+}

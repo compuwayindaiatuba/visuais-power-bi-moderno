@@ -1,0 +1,665 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Tabela",
+      "name": "tableFields",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "ID da imagem",
+      "name": "imageId",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "URL da imagem",
+      "name": "imageUrl",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "titleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "maxRows": {
+          "type": {
+            "integer": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "ranking": {
+      "displayName": "Ranking",
+      "properties": {
+        "sortColumnName": {
+          "type": {
+            "text": true
+          }
+        },
+        "sortDirection": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Melhores primeiro",
+                "value": "best"
+              },
+              {
+                "displayName": "Piores primeiro",
+                "value": "worst"
+              }
+            ]
+          }
+        },
+        "showTitleIcon": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showRankToggle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showPositionColumn": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "tableStyle": {
+      "displayName": "Tabela",
+      "properties": {
+        "headerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "dividerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "accentColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "headerFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "rowHeight": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "dataFormat": {
+      "displayName": "Formatos dos dados",
+      "properties": {
+        "defaultType": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "defaultDecimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "currencySymbol": {
+          "type": {
+            "text": true
+          }
+        },
+        "column1Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column1Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column1Decimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "column2Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column2Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column2Decimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "column3Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column3Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column3Decimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "column4Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column4Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column4Decimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "column5Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column5Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column5Decimals": {
+          "type": {
+            "integer": true
+          }
+        },
+        "column6Title": {
+          "type": {
+            "text": true
+          }
+        },
+        "column6Type": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Texto",
+                "value": "text"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual",
+                "value": "percent"
+              }
+            ]
+          }
+        },
+        "column6Decimals": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "images": {
+      "displayName": "Imagens",
+      "properties": {
+        "showImages": {
+          "type": {
+            "bool": true
+          }
+        },
+        "imageSize": {
+          "type": {
+            "integer": true
+          }
+        },
+        "imageRadius": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "footer": {
+      "displayName": "Rodape",
+      "properties": {
+        "showFooter": {
+          "type": {
+            "bool": true
+          }
+        },
+        "footerLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "aggregateType": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Media",
+                "value": "average"
+              },
+              {
+                "displayName": "Soma",
+                "value": "sum"
+              },
+              {
+                "displayName": "Maximo",
+                "value": "max"
+              },
+              {
+                "displayName": "Minimo",
+                "value": "min"
+              },
+              {
+                "displayName": "Contagem",
+                "value": "count"
+              }
+            ]
+          }
+        },
+        "footerBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "footerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "conditional": {
+      "displayName": "Formatacao condicional",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "columnName": {
+          "type": {
+            "text": true
+          }
+        },
+        "minValue": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "maxValue": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "iconStyle": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Estrelas",
+                "value": "stars"
+              },
+              {
+                "displayName": "Wifi",
+                "value": "wifi"
+              },
+              {
+                "displayName": "Barras",
+                "value": "bars"
+              },
+              {
+                "displayName": "Bolinhas",
+                "value": "dots"
+              }
+            ]
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "showValue": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "tableFields": {
+            "min": 1,
+            "max": 30
+          },
+          "imageId": {
+            "max": 1
+          },
+          "imageUrl": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "tableFields"
+              }
+            },
+            {
+              "for": {
+                "in": "imageId"
+              }
+            },
+            {
+              "for": {
+                "in": "imageUrl"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "tableFields"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": [
+        "*"
+      ]
+    }
+  ]
+}

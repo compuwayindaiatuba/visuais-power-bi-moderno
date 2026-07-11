@@ -1,0 +1,378 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Valor",
+      "name": "value",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Data",
+      "name": "date",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "showTitle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "titleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "gradientOpacity": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "titleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "icon": {
+      "displayName": "Icone",
+      "properties": {
+        "showIcon": {
+          "type": {
+            "bool": true
+          }
+        },
+        "iconText": {
+          "type": {
+            "text": true
+          }
+        },
+        "iconUrl": {
+          "type": {
+            "text": true
+          }
+        },
+        "iconBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "iconCornerRadius": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "valueCard": {
+      "displayName": "Valor",
+      "properties": {
+        "valueFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "valueColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "valuePrefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "valueSuffix": {
+          "type": {
+            "text": true
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "comparison": {
+      "displayName": "Comparacao",
+      "properties": {
+        "showComparison": {
+          "type": {
+            "bool": true
+          }
+        },
+        "mainPeriodDays": {
+          "type": {
+            "integer": true
+          }
+        },
+        "comparisonLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "positiveColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "negativeColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "neutralColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "comparisonFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "chart": {
+      "displayName": "Grafico de linha",
+      "properties": {
+        "showChart": {
+          "type": {
+            "bool": true
+          }
+        },
+        "lineColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "areaColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "areaOpacity": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "lineWidth": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "curveStyle": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Ondulada",
+                "value": "smooth"
+              },
+              {
+                "displayName": "Aguda",
+                "value": "sharp"
+              }
+            ]
+          }
+        },
+        "chartPeriodMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Periodo completo",
+                "value": "full"
+              },
+              {
+                "displayName": "Usar dias da comparacao",
+                "value": "comparison"
+              }
+            ]
+          }
+        },
+        "chartHeight": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "value": {
+            "min": 1,
+            "max": 1
+          },
+          "date": {
+            "max": 4
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "date"
+          },
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "value"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": [
+        "*"
+      ]
+    }
+  ]
+}

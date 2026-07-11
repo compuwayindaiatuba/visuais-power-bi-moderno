@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="2" y1="3" x2="17" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="1" y1="3" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFBFD"/>
+    </linearGradient>
+    <linearGradient id="mutedGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6ECF6"/>
+      <stop offset="1" stop-color="#DCE4F0"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer panel -->
+  <rect x="1.2" y="3.0" width="17.0" height="12.8" rx="1.0" fill="url(#panelGrad)" stroke="url(#darkGrad)" stroke-width="0.72"/>
+
+  <!-- Top menu bar -->
+  <path d="M2 4.05C2 3.55 2.4 3.35 2.9 3.35H16.5C17.05 3.35 17.45 3.75 17.45 4.3V5.95H2V4.05Z" fill="url(#blueGrad)"/>
+  <path d="M2 5.98H17.45" stroke="url(#darkGrad)" stroke-width="0.6" stroke-linecap="round"/>
+
+  <!-- Menu items on top -->
+  <rect x="2.8" y="4.4" width="2.2" height="0.36" rx="0.18" fill="#FFFFFF"/>
+  <rect x="5.6" y="4.4" width="2.0" height="0.36" rx="0.18" fill="#DCEBFF"/>
+  <rect x="8.2" y="4.4" width="2.1" height="0.36" rx="0.18" fill="#DCEBFF"/>
+  <rect x="10.9" y="4.4" width="1.7" height="0.36" rx="0.18" fill="#DCEBFF"/>
+  <circle cx="15.8" cy="4.58" r="0.2" fill="#FFFFFF"/>
+  <circle cx="16.45" cy="4.58" r="0.2" fill="#FFFFFF"/>
+
+  <!-- List menu below -->
+  <rect x="2.7" y="7.15" width="11.6" height="1.15" rx="0.28" fill="#F4F7FC" stroke="#E4EAF4" stroke-width="0.06"/>
+  <rect x="3.25" y="7.55" width="0.5" height="0.28" rx="0.14" fill="url(#blueGrad)"/>
+  <rect x="4.15" y="7.55" width="4.4" height="0.28" rx="0.14" fill="url(#darkGrad)"/>
+  <rect x="9.2" y="7.55" width="3.9" height="0.24" rx="0.12" fill="url(#mutedGrad)"/>
+
+  <rect x="2.7" y="8.9" width="11.6" height="1.15" rx="0.28" fill="#F4F7FC" stroke="#E4EAF4" stroke-width="0.06"/>
+  <rect x="3.25" y="9.3" width="0.5" height="0.28" rx="0.14" fill="#8B5CF6"/>
+  <rect x="4.15" y="9.3" width="4.7" height="0.28" rx="0.14" fill="url(#darkGrad)"/>
+  <rect x="9.45" y="9.3" width="3.65" height="0.24" rx="0.12" fill="url(#mutedGrad)"/>
+
+  <rect x="2.7" y="10.65" width="11.6" height="1.15" rx="0.28" fill="#F4F7FC" stroke="#E4EAF4" stroke-width="0.06"/>
+  <rect x="3.25" y="11.05" width="0.5" height="0.28" rx="0.14" fill="#F59E0B"/>
+  <rect x="4.15" y="11.05" width="4.1" height="0.28" rx="0.14" fill="url(#darkGrad)"/>
+  <rect x="8.9" y="11.05" width="4.2" height="0.24" rx="0.12" fill="url(#mutedGrad)"/>
+
+  <rect x="2.7" y="12.4" width="11.6" height="1.15" rx="0.28" fill="#F4F7FC" stroke="#E4EAF4" stroke-width="0.06"/>
+  <rect x="3.25" y="12.8" width="0.5" height="0.28" rx="0.14" fill="#10B981"/>
+  <rect x="4.15" y="12.8" width="4.55" height="0.28" rx="0.14" fill="url(#darkGrad)"/>
+  <rect x="9.35" y="12.8" width="3.75" height="0.24" rx="0.12" fill="url(#mutedGrad)"/>
+
+  <!-- Right side small list preview -->
+  <rect x="15.2" y="7.25" width="1.45" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="15.2" y="8.05" width="1.15" height="0.2" rx="0.1" fill="url(#mutedGrad)"/>
+  <rect x="15.2" y="9.0" width="1.45" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="15.2" y="9.8" width="1.15" height="0.2" rx="0.1" fill="url(#mutedGrad)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.65" cy="13.3" r="2.05" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.56"/>
+  <path d="M17.25 12.37A1.63 1.63 0 1 0 17.25 14.23L16.52 13.69A0.75 0.75 0 1 1 16.52 12.91Z" fill="url(#orangeGrad)"/>
+  <circle cx="15.65" cy="13.3" r="0.43" fill="url(#orangeGrad)"/>
+</svg>

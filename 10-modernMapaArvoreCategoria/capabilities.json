@@ -1,0 +1,664 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Niveis da arvore",
+      "name": "levels",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Valores",
+      "name": "values",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Classificacao",
+      "name": "sortOrder",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Dicas de ferramentas",
+      "name": "tooltips",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "header": {
+      "displayName": "Cabecalho",
+      "properties": {
+        "showIcon": {
+          "type": {
+            "bool": true
+          }
+        },
+        "title": {
+          "type": {
+            "text": true
+          }
+        },
+        "subtitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "subtitleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "titleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "subtitleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "navigation": {
+      "displayName": "Navegacao",
+      "properties": {
+        "showLevelBar": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showInstruction": {
+          "type": {
+            "bool": true
+          }
+        },
+        "instructionText": {
+          "type": {
+            "text": true
+          }
+        },
+        "showBackButton": {
+          "type": {
+            "bool": true
+          }
+        },
+        "backText": {
+          "type": {
+            "text": true
+          }
+        },
+        "levelLabelPrefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "activeLevelColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "inactiveLevelColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "ranking": {
+      "displayName": "Classificacao e limite",
+      "properties": {
+        "sortMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Maior valor",
+                "value": "valueDesc"
+              },
+              {
+                "displayName": "Menor valor",
+                "value": "valueAsc"
+              },
+              {
+                "displayName": "Ordem da tabela",
+                "value": "table"
+              },
+              {
+                "displayName": "Classificacao maior",
+                "value": "sortDesc"
+              },
+              {
+                "displayName": "Classificacao menor",
+                "value": "sortAsc"
+              }
+            ]
+          }
+        },
+        "maxItems": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showOthers": {
+          "type": {
+            "bool": true
+          }
+        },
+        "othersLabel": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "numberFormat": {
+      "displayName": "Formato dos numeros",
+      "properties": {
+        "valueFormat": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual 0-100",
+                "value": "percent"
+              },
+              {
+                "displayName": "Percentual decimal 0-1",
+                "value": "percentFraction"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "prefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "suffix": {
+          "type": {
+            "text": true
+          }
+        },
+        "percentDecimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "tree": {
+      "displayName": "Arvore",
+      "properties": {
+        "blockGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "blockRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "outerPadding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showExpandButton": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showCategory": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showValue": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showPercent": {
+          "type": {
+            "bool": true
+          }
+        },
+        "labelColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "categoryFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "valueFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "percentFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "hideLabelsBelowArea": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "colors": {
+      "displayName": "Cores",
+      "properties": {
+        "color1": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color2": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color3": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color4": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color5": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color6": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color7": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color8": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color9": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color10": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "sidePanel": {
+      "displayName": "Painel lateral",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "summaryTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "totalLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "currentLevelLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "nextLevelLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "itemsLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "performanceTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "maxLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "minLabel": {
+          "type": {
+            "text": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "displayName": "Rodape",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "text": {
+          "type": {
+            "text": true
+          }
+        },
+        "color": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "levels": {
+            "max": 10
+          },
+          "values": {
+            "max": 1
+          },
+          "sortOrder": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          },
+          "tooltips": {
+            "max": 20
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "levels"
+              }
+            },
+            {
+              "for": {
+                "in": "values"
+              }
+            },
+            {
+              "for": {
+                "in": "sortOrder"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "levels",
+      "values",
+      "tooltips"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": []
+}

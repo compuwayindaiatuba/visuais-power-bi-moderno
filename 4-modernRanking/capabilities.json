@@ -1,0 +1,481 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Icone",
+      "name": "icon",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Texto",
+      "name": "label",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Numero",
+      "name": "value",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Dicas de ferramentas",
+      "name": "tooltips",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "showHeader": {
+          "type": {
+            "bool": true
+          }
+        },
+        "titleText": {
+          "type": {
+            "text": true
+          }
+        },
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "rowGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "ranking": {
+      "displayName": "Ranking",
+      "properties": {
+        "sortMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Maiores primeiro",
+                "value": "top"
+              },
+              {
+                "displayName": "Menores primeiro",
+                "value": "bottom"
+              },
+              {
+                "displayName": "Ordem da tabela",
+                "value": "table"
+              }
+            ]
+          }
+        },
+        "visibleItems": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showBars": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSortToggle": {
+          "type": {
+            "bool": true
+          }
+        },
+        "barHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showHighlight": {
+          "type": {
+            "bool": true
+          }
+        },
+        "highlightPosition": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Primeiro visivel",
+                "value": "first"
+              },
+              {
+                "displayName": "Ultimo visivel",
+                "value": "last"
+              }
+            ]
+          }
+        },
+        "highlightLabel": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "valuesFormat": {
+      "displayName": "Valores",
+      "properties": {
+        "formatType": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Automatico",
+                "value": "auto"
+              },
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual 0-100",
+                "value": "percent"
+              },
+              {
+                "displayName": "Percentual decimal 0-1",
+                "value": "percentFraction"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "displayUnits": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Nenhum",
+                "value": "none"
+              },
+              {
+                "displayName": "Mil",
+                "value": "thousand"
+              },
+              {
+                "displayName": "Milhao",
+                "value": "million"
+              },
+              {
+                "displayName": "Bilhao",
+                "value": "billion"
+              }
+            ]
+          }
+        },
+        "prefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "suffix": {
+          "type": {
+            "text": true
+          }
+        },
+        "currencySymbol": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "style": {
+      "displayName": "Estilo",
+      "properties": {
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "trackColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "highlightBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "titleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "valueFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "iconSize": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "colors": {
+      "displayName": "Cores",
+      "properties": {
+        "color1": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color2": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color3": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color4": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color5": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color6": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "behavior": {
+      "displayName": "Interacao",
+      "properties": {
+        "enableSelection": {
+          "type": {
+            "bool": true
+          }
+        },
+        "enableContextMenu": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "icon": {
+            "max": 1
+          },
+          "label": {
+            "max": 1
+          },
+          "value": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          },
+          "tooltips": {
+            "max": 10
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "icon"
+              }
+            },
+            {
+              "for": {
+                "in": "label"
+              }
+            },
+            {
+              "for": {
+                "in": "value"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "label",
+      "value",
+      "tooltips"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": [
+    {
+      "name": "WebAccess",
+      "essential": false,
+      "parameters": []
+    }
+  ]
+}

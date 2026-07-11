@@ -1,0 +1,68 @@
+EXEMPLO FINAL DE TABELA PARA O VISUAL MenuSideLateral
+
+Estrutura recomendada:
+
+Ordem;categoria;nome;Icon;LinkDestino;Tema
+
+O campo Tema e opcional.
+Se voce nao quiser tema por tabela, nao precisa criar nem arrastar essa coluna.
+
+TABELA DE EXEMPLO - MAXIMO 5 BOTOES
+
+Ordem;categoria;nome;Icon;LinkDestino;Tema
+1;Menu;Visao Geral;home;94bb3ffb7022cbad71a0;Claro
+2;Menu;Funcionarios;users;a633e93e5be75a716a21;Claro
+3;Estoque;Produtos;grid;794cbea6171422b3ab7a;Claro
+4;Estoque;Vendas;chart;COLE_AQUI_O_ID_FINAL_DA_PAGINA;Claro
+5;Dinheiro;Caixa;wallet;COLE_AQUI_O_ID_FINAL_DA_PAGINA;Claro
+
+COMO ARRASTAR OS CAMPOS NO POWER BI
+
+Ordem                  -> Ordem
+categoria              -> Categoria / Grupo
+nome                   -> Nome do botao
+Icon                   -> Icone
+LinkDestino            -> LinkDestino / ID da pagina
+Tema                   -> Tema por dados, opcional
+
+COMO CONFIGURAR O LINK NO VISUAL
+
+No painel de formatacao do visual:
+
+Interacao > Acao do clique = Abrir URL
+Interacao > URL base relatorio = https://app.powerbi.com/groups/me/reports/a3401e0a-b415-43ea-9faa-3709b9d8711d?experience=power-bi
+Interacao > Completar URL = LinkDestino + URL base
+
+Com isso, quando clicar no botao "Visao Geral", o visual monta:
+
+https://app.powerbi.com/groups/me/reports/a3401e0a-b415-43ea-9faa-3709b9d8711d/94bb3ffb7022cbad71a0?experience=power-bi
+
+Tambem pode colar como URL base uma URL completa de qualquer pagina, por exemplo:
+
+https://app.powerbi.com/groups/me/reports/a3401e0a-b415-43ea-9faa-3709b9d8711d/94bb3ffb7022cbad71a0?experience=power-bi
+
+Nesse caso, o visual substitui o ultimo ID da pagina pelo valor de LinkDestino.
+
+COMO PEGAR O LinkDestino
+
+1. Abra a pagina no Power BI Service.
+2. Copie a URL do navegador.
+3. Pegue o trecho depois do ID do relatorio.
+
+Exemplo:
+
+URL completa:
+https://app.powerbi.com/groups/me/reports/a3401e0a-b415-43ea-9faa-3709b9d8711d/a633e93e5be75a716a21?experience=power-bi
+
+LinkDestino:
+a633e93e5be75a716a21
+
+OBSERVACOES IMPORTANTES
+
+- O campo nome pode ter espaco e acento, porque ele e usado como texto do botao e filtro.
+- O campo LinkDestino deve guardar o ID tecnico da pagina, como 94bb3ffb7022cbad71a0.
+- O visual usa Ordem para ordenar os botoes em ordem crescente.
+- Se Ordem nao for arrastado, o visual usa a ordem que o Power BI entregar.
+- Se quiser grupos juntos, organize os numeros da coluna Ordem deixando as categorias juntas.
+- Se LinkDestino for uma URL HTTPS completa, o visual abre essa URL diretamente.
+- O visual nao consegue disparar a acao nativa "Navegacao na pagina" dos botoes do Power BI.

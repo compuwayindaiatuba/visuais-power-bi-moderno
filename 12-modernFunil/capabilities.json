@@ -1,0 +1,818 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Etapa",
+      "name": "stage",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Quantidade",
+      "name": "value",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Classificacao",
+      "name": "sortOrder",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Subtitulo etapa",
+      "name": "stageSubtitle",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Receita",
+      "name": "revenue",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Media",
+      "name": "average",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Dicas de ferramentas",
+      "name": "tooltips",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "backgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "padding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "showShadow": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "header": {
+      "displayName": "Cabecalho",
+      "properties": {
+        "showIcon": {
+          "type": {
+            "bool": true
+          }
+        },
+        "title": {
+          "type": {
+            "text": true
+          }
+        },
+        "subtitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "subtitleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "titleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "subtitleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "ranking": {
+      "displayName": "Classificacao e limite",
+      "properties": {
+        "sortMode": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Maior quantidade",
+                "value": "valueDesc"
+              },
+              {
+                "displayName": "Menor quantidade",
+                "value": "valueAsc"
+              },
+              {
+                "displayName": "Ordem da tabela",
+                "value": "table"
+              },
+              {
+                "displayName": "Classificacao maior",
+                "value": "sortDesc"
+              },
+              {
+                "displayName": "Classificacao menor",
+                "value": "sortAsc"
+              }
+            ]
+          }
+        },
+        "visibleItems": {
+          "type": {
+            "integer": true
+          }
+        }
+      }
+    },
+    "funnel": {
+      "displayName": "Funil",
+      "properties": {
+        "maxStages": {
+          "type": {
+            "integer": true
+          }
+        },
+        "minStageWidth": {
+          "type": {
+            "integer": true
+          }
+        },
+        "stageHeight": {
+          "type": {
+            "integer": true
+          }
+        },
+        "stageGap": {
+          "type": {
+            "integer": true
+          }
+        },
+        "stageRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "showStageValues": {
+          "type": {
+            "bool": true
+          }
+        },
+        "valueColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "valueFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    },
+    "numberFormat": {
+      "displayName": "Formato dos numeros",
+      "properties": {
+        "valueFormat": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Numero",
+                "value": "number"
+              },
+              {
+                "displayName": "Moeda",
+                "value": "currency"
+              },
+              {
+                "displayName": "Percentual 0-100",
+                "value": "percent"
+              },
+              {
+                "displayName": "Percentual decimal 0-1",
+                "value": "percentFraction"
+              }
+            ]
+          }
+        },
+        "decimalPlaces": {
+          "type": {
+            "integer": true
+          }
+        },
+        "prefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "suffix": {
+          "type": {
+            "text": true
+          }
+        },
+        "revenuePrefix": {
+          "type": {
+            "text": true
+          }
+        },
+        "averagePrefix": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "legendStyle": {
+      "displayName": "Legenda",
+      "properties": {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSubtitles": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showValues": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showConversion": {
+          "type": {
+            "bool": true
+          }
+        },
+        "headerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "textColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mutedColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "dividerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "colors": {
+      "displayName": "Cores das etapas",
+      "properties": {
+        "color1": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color2": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color3": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color4": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color5": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color6": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color7": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "color8": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "summaryCards": {
+      "displayName": "Cards inferiores",
+      "properties": {
+        "showCards": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showConversion": {
+          "type": {
+            "bool": true
+          }
+        },
+        "conversionTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "conversionIcon": {
+          "type": {
+            "text": true
+          }
+        },
+        "conversionValueText": {
+          "type": {
+            "text": true
+          }
+        },
+        "conversionFooter": {
+          "type": {
+            "text": true
+          }
+        },
+        "showSales": {
+          "type": {
+            "bool": true
+          }
+        },
+        "salesTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "salesIcon": {
+          "type": {
+            "text": true
+          }
+        },
+        "salesValueText": {
+          "type": {
+            "text": true
+          }
+        },
+        "salesFooter": {
+          "type": {
+            "text": true
+          }
+        },
+        "showRevenue": {
+          "type": {
+            "bool": true
+          }
+        },
+        "revenueTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "revenueIcon": {
+          "type": {
+            "text": true
+          }
+        },
+        "revenueValueText": {
+          "type": {
+            "text": true
+          }
+        },
+        "revenueFooter": {
+          "type": {
+            "text": true
+          }
+        },
+        "showAverage": {
+          "type": {
+            "bool": true
+          }
+        },
+        "averageTitle": {
+          "type": {
+            "text": true
+          }
+        },
+        "averageIcon": {
+          "type": {
+            "text": true
+          }
+        },
+        "averageValueText": {
+          "type": {
+            "text": true
+          }
+        },
+        "averageFooter": {
+          "type": {
+            "text": true
+          }
+        },
+        "cardBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "cardBorderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "cardRadius": {
+          "type": {
+            "integer": true
+          }
+        },
+        "cardPadding": {
+          "type": {
+            "integer": true
+          }
+        },
+        "cardFontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "titleFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "valueFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "footerFontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        },
+        "titleWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "650"
+              },
+              {
+                "displayName": "Bold",
+                "value": "750"
+              },
+              {
+                "displayName": "Extra bold",
+                "value": "800"
+              }
+            ]
+          }
+        },
+        "valueWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "650"
+              },
+              {
+                "displayName": "Bold",
+                "value": "750"
+              },
+              {
+                "displayName": "Extra bold",
+                "value": "800"
+              }
+            ]
+          }
+        },
+        "footerWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "400"
+              },
+              {
+                "displayName": "Medium",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "650"
+              }
+            ]
+          }
+        },
+        "titleColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "valueColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "footerColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "iconBackground": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "stage": {
+            "max": 1
+          },
+          "value": {
+            "max": 1
+          },
+          "sortOrder": {
+            "max": 1
+          },
+          "stageSubtitle": {
+            "max": 1
+          },
+          "revenue": {
+            "max": 1
+          },
+          "average": {
+            "max": 1
+          },
+          "menu": {
+            "max": 1
+          },
+          "tooltips": {
+            "max": 10
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "stage"
+              }
+            },
+            {
+              "for": {
+                "in": "stageSubtitle"
+              }
+            },
+            {
+              "for": {
+                "in": "value"
+              }
+            },
+            {
+              "for": {
+                "in": "sortOrder"
+              }
+            },
+            {
+              "for": {
+                "in": "revenue"
+              }
+            },
+            {
+              "for": {
+                "in": "average"
+              }
+            },
+            {
+              "for": {
+                "in": "menu"
+              }
+            },
+            {
+              "for": {
+                "in": "tooltips"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 5000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tooltips": {
+    "supportedTypes": {
+      "default": true,
+      "canvas": true
+    },
+    "roles": [
+      "stage",
+      "value",
+      "tooltips"
+    ],
+    "supportEnhancedTooltips": true
+  },
+  "privileges": []
+}

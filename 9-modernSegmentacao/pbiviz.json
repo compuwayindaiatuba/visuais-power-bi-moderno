@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "cpwModernSegmentacao",
+    "displayName": "CPW Modern Segmentacao",
+    "guid": "cpwModernSegmentacao",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Compuway segmentacao moderna com modos de blocos, lista, suspensa e linha do tempo.",
+    "supportUrl": "https://compuwayead.com.br/power-bi/custom-visual",
+    "gitHubUrl": "https://github.com/compuwayindaiatuba/visuais-power-bi-moderno"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Igor Gabriel Tonchichi",
+    "email": "igorgabrielton@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.svg"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="1" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFBFD"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="4" y1="5" x2="13" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="blueSoft" x1="3" y1="5" x2="12" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF2FF"/>
+      <stop offset="1" stop-color="#DCEAFF"/>
+    </linearGradient>
+    <linearGradient id="purpleSoft" x1="4" y1="8" x2="12" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F2EEFF"/>
+      <stop offset="1" stop-color="#E7DEFF"/>
+    </linearGradient>
+    <linearGradient id="orangeSoft" x1="5" y1="10" x2="12" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF3E7"/>
+      <stop offset="1" stop-color="#FFE7CF"/>
+    </linearGradient>
+    <linearGradient id="mutedGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6ECF6"/>
+      <stop offset="1" stop-color="#DCE4F0"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer card -->
+  <rect x="1.15" y="1.2" width="17.7" height="17.2" rx="1.0" fill="url(#panelGrad)" stroke="#E9EAF2" stroke-width="0.12"/>
+
+  <!-- Title -->
+  <rect x="2.2" y="2.2" width="5.4" height="0.68" rx="0.2" fill="url(#darkGrad)"/>
+  <rect x="2.2" y="3.95" width="2.5" height="0.32" rx="0.12" fill="url(#darkGrad)" opacity="0.95"/>
+  <rect x="9.85" y="3.95" width="3.1" height="0.32" rx="0.12" fill="url(#darkGrad)" opacity="0.95"/>
+
+  <!-- Funnel frame -->
+  <rect x="2.2" y="5.15" width="11.95" height="9.45" rx="0.38" fill="#FFFFFF" stroke="url(#mutedGrad)" stroke-width="0.10"/>
+
+  <!-- Funnel sections -->
+  <path d="M3.0 6.0 H13.35 L12.2 7.55 H4.15 Z" fill="url(#blueGrad)"/>
+  <path d="M4.15 7.82 H12.2 L11.05 9.35 H5.3 Z" fill="url(#blueSoft)" stroke="#D8E5FB" stroke-width="0.05"/>
+  <path d="M5.3 9.62 H11.05 L10.0 11.0 H6.35 Z" fill="url(#purpleSoft)" stroke="#E5DCF9" stroke-width="0.05"/>
+  <path d="M6.35 11.28 H10.0 L9.05 12.48 H7.3 Z" fill="url(#orangeSoft)" stroke="#F7DFC2" stroke-width="0.05"/>
+  <rect x="7.78" y="12.68" width="0.8" height="1.28" rx="0.16" fill="url(#blueGrad)"/>
+
+  <!-- Small labels inside funnel -->
+  <rect x="4.2" y="6.5" width="2.2" height="0.18" rx="0.09" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="4.55" y="8.28" width="1.8" height="0.16" rx="0.08" fill="url(#darkGrad)"/>
+  <rect x="5.65" y="10.05" width="1.45" height="0.16" rx="0.08" fill="url(#darkGrad)"/>
+  <rect x="6.75" y="11.65" width="1.0" height="0.16" rx="0.08" fill="url(#darkGrad)"/>
+
+  <!-- Side conversion labels -->
+  <rect x="11.0" y="6.45" width="1.8" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+  <rect x="10.55" y="8.2" width="2.25" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+  <rect x="10.1" y="9.98" width="2.7" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+  <rect x="9.65" y="11.6" width="3.15" height="0.18" rx="0.09" fill="url(#mutedGrad)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.75" cy="15.0" r="2.0" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.54"/>
+  <path d="M17.32 14.09 A1.58 1.58 0 1 0 17.32 15.89 L16.62 15.37 A0.72 0.72 0 1 1 16.62 14.61 Z" fill="url(#orangeGrad)"/>
+  <circle cx="15.75" cy="15.0" r="0.42" fill="url(#orangeGrad)"/>
+</svg>

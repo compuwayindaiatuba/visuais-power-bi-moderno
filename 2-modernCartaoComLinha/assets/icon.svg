@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="2" y1="3" x2="16" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="lightBlueGrad" x1="2" y1="10" x2="18" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9E6FA"/>
+      <stop offset="1" stop-color="#C9D9F3"/>
+    </linearGradient>
+    <linearGradient id="avatarBg" x1="2" y1="2" x2="7" y2="9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EDF4FF"/>
+      <stop offset="1" stop-color="#E5EEF9"/>
+    </linearGradient>
+    <linearGradient id="mutedGrad" x1="10" y1="7" x2="14" y2="9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8E8E93"/>
+      <stop offset="1" stop-color="#7A7A80"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main card -->
+  <rect x="1.2" y="3.0" width="17.0" height="12.4" rx="0.95"
+        fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.72"/>
+
+  <!-- Avatar circle -->
+  <circle cx="4.7" cy="6.6" r="2.45" fill="url(#avatarBg)" stroke="url(#darkGrad)" stroke-width="0.68"/>
+
+  <!-- People icon -->
+  <circle cx="4.1" cy="5.9" r="0.48" fill="url(#blueGrad)"/>
+  <circle cx="5.3" cy="5.9" r="0.48" fill="url(#blueGrad)"/>
+  <path d="M3.55 7.9 V7.45 A0.72 0.72 0 0 1 4.27 6.73 H4.55 A0.78 0.78 0 0 1 5.33 7.51 V7.9 Z"
+        fill="url(#blueGrad)"/>
+  <path d="M4.75 7.9 V7.45 A0.72 0.72 0 0 1 5.47 6.73 H5.75 A0.78 0.78 0 0 1 6.53 7.51 V7.9 Z"
+        fill="url(#blueGrad)"/>
+
+  <!-- Text bars -->
+  <rect x="9.0" y="5.0" width="4.2" height="0.62" rx="0.31" fill="url(#darkGrad)"/>
+  <rect x="9.0" y="6.45" width="7.3" height="1.0" rx="0.28" fill="url(#darkGrad)"/>
+  <path d="M9.32 8.62 L9.72 9.02 L10.12 8.62 M9.72 8.12 V9.02"
+        stroke="#E53935" stroke-width="0.34" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="10.45" y="8.45" width="2.85" height="0.54" rx="0.27" fill="url(#mutedGrad)"/>
+
+  <!-- Chart area -->
+  <path d="M3.15 12.95
+           C4.45 12.65, 5.15 11.9, 6.55 11.95
+           C8.0 12.0, 8.2 12.7, 9.55 12.4
+           C10.8 12.12, 11.45 11.3, 12.65 11.45
+           C13.65 11.58, 14.2 12.1, 15.05 11.95
+           C16.0 11.78, 16.9 11.28, 17.15 11.2
+           V14.1 H3.15 Z"
+        fill="url(#lightBlueGrad)"/>
+
+  <path d="M3.15 12.95
+           C4.45 12.65, 5.15 11.9, 6.55 11.95
+           C8.0 12.0, 8.2 12.7, 9.55 12.4
+           C10.8 12.12, 11.45 11.3, 12.65 11.45
+           C13.65 11.58, 14.2 12.1, 15.05 11.95
+           C16.0 11.78, 16.9 11.28, 17.15 11.2"
+        stroke="url(#blueGrad)" stroke-width="0.36" stroke-linecap="round" fill="none"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.85" cy="14.15" r="2.55" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.58"/>
+  <path d="M17.85 13.0
+           A2.02 2.02 0 1 0 17.85 15.3
+           L16.95 14.64
+           A0.93 0.93 0 1 1 16.95 13.66
+           Z"
+        fill="url(#orangeGrad)"/>
+  <circle cx="15.85" cy="14.15" r="0.54" fill="url(#orangeGrad)"/>
+</svg>

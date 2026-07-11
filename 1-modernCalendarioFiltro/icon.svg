@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="20" height="20" viewBox="0 0 20 20"
+     fill="none">
+  <defs>
+    <linearGradient id="blueGrad" x1="2" y1="4" x2="18" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2196F3"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="grayCell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D7D7D7"/>
+      <stop offset="1" stop-color="#C7C7C7"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Calendar body -->
+  <path d="M2.2 4.2
+           Q2.2 3.2 3.4 3.2
+           H16.6
+           Q17.8 3.2 17.8 4.4
+           V15.7
+           Q17.8 17 16.5 17
+           H3.5
+           Q2.2 17 2.2 15.7
+           Z"
+        fill="#FFFFFF"
+        stroke="url(#darkGrad)"
+        stroke-width="0.7"
+        stroke-linejoin="round"/>
+
+  <!-- Header -->
+  <path d="M2.55 4.4
+           Q2.55 3.55 3.5 3.55
+           H16.5
+           Q17.45 3.55 17.45 4.5
+           V6.55
+           H2.55 Z"
+        fill="url(#blueGrad)"/>
+
+  <!-- Header divider -->
+  <path d="M2.25 6.6 H17.75"
+        stroke="url(#darkGrad)"
+        stroke-width="0.7"
+        stroke-linecap="round"/>
+
+  <!-- Left binder -->
+  <rect x="4.35" y="2.0" width="0.85" height="3.0" rx="0.42"
+        fill="url(#darkGrad)"/>
+  <path d="M3.85 4.25 V5.55 H5.7 V4.25"
+        stroke="url(#darkGrad)"
+        stroke-width="0.62"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+  <!-- Right binder -->
+  <rect x="14.8" y="2.0" width="0.85" height="3.0" rx="0.42"
+        fill="url(#darkGrad)"/>
+  <path d="M14.3 4.25 V5.55 H16.15 V4.25"
+        stroke="url(#darkGrad)"
+        stroke-width="0.62"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+  <!-- Calendar cells -->
+  <g fill="url(#grayCell)">
+    <rect x="3.25" y="8.0" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="5.85" y="8.0" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="8.45" y="8.0" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="11.05" y="8.0" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="13.65" y="8.0" width="1.35" height="1.35" rx="0.12"/>
+
+    <rect x="3.25" y="10.4" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="5.85" y="10.4" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="8.45" y="10.4" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="11.05" y="10.4" width="1.35" height="1.35" rx="0.12"/>
+
+    <rect x="3.25" y="12.8" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="5.85" y="12.8" width="1.35" height="1.35" rx="0.12"/>
+    <rect x="8.45" y="12.8" width="1.35" height="1.35" rx="0.12"/>
+  </g>
+
+  <!-- Selected date -->
+  <rect x="11.05" y="12.8" width="1.35" height="1.35" rx="0.12"
+        fill="url(#blueGrad)"/>
+
+  <!-- School badge -->
+  <circle cx="15.55" cy="14.7" r="3.45"
+          fill="#FFFFFF"
+          stroke="url(#darkGrad)"
+          stroke-width="0.62"/>
+
+  <!-- Orange C logo -->
+  <path d="M18.3 13.15
+           A2.72 2.72 0 1 0 18.3 16.25
+           L17.1 15.35
+           A1.25 1.25 0 1 1 17.1 14.05
+           Z"
+        fill="url(#orangeGrad)"/>
+  <circle cx="15.55" cy="14.7" r="0.72"
+          fill="url(#orangeGrad)"/>
+</svg>

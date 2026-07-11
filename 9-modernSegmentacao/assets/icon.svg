@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <linearGradient id="darkGrad" x1="1" y1="2" x2="19" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B5563"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="1" y1="2" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FBFBFD"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="3" y1="4" x2="15" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C6CF6"/>
+      <stop offset="1" stop-color="#2D8BF0"/>
+    </linearGradient>
+    <linearGradient id="mutedGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E6ECF6"/>
+      <stop offset="1" stop-color="#DCE4F0"/>
+    </linearGradient>
+    <linearGradient id="chipGrad" x1="2" y1="7" x2="11" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EEF4FF"/>
+      <stop offset="1" stop-color="#E4EEFD"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="13" y1="12" x2="18" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#F4511E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer card -->
+  <rect x="1.15" y="1.2" width="17.7" height="17.2" rx="1.0" fill="url(#panelGrad)" stroke="#E9EAF2" stroke-width="0.12"/>
+
+  <!-- Title -->
+  <rect x="2.2" y="2.2" width="5.4" height="0.68" rx="0.2" fill="url(#darkGrad)"/>
+
+  <!-- Funnel icon -->
+  <path d="M14.9 2.25 H17.1 L16.15 3.35 V4.15 L15.8 4.45 V3.35 Z" fill="url(#blueGrad)"/>
+
+  <!-- Search / filter row -->
+  <rect x="2.25" y="4.1" width="11.9" height="1.45" rx="0.32" fill="#F7F9FC" stroke="#E6EBF4" stroke-width="0.08"/>
+  <circle cx="3.15" cy="4.83" r="0.22" stroke="url(#mutedGrad)" stroke-width="0.14" fill="none"/>
+  <path d="M3.3 4.98 L3.48 5.16" stroke="url(#mutedGrad)" stroke-width="0.14" stroke-linecap="round"/>
+  <rect x="3.9" y="4.72" width="3.8" height="0.24" rx="0.12" fill="url(#mutedGrad)"/>
+  <path d="M13.1 4.66 L13.4 4.96 L13.7 4.66" stroke="url(#darkGrad)" stroke-width="0.14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Selected chips -->
+  <rect x="2.25" y="6.4" width="3.5" height="1.4" rx="0.34" fill="url(#chipGrad)" stroke="#D9E6FB" stroke-width="0.08"/>
+  <circle cx="3.1" cy="7.1" r="0.27" fill="url(#blueGrad)"/>
+  <path d="M2.98 7.1 L3.07 7.19 L3.23 7.01" stroke="#FFFFFF" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="3.55" y="6.98" width="1.5" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+
+  <rect x="6.15" y="6.4" width="3.85" height="1.4" rx="0.34" fill="url(#chipGrad)" stroke="#D9E6FB" stroke-width="0.08"/>
+  <circle cx="7.0" cy="7.1" r="0.27" fill="url(#blueGrad)"/>
+  <path d="M6.88 7.1 L6.97 7.19 L7.13 7.01" stroke="#FFFFFF" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="7.45" y="6.98" width="1.85" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+
+  <!-- List options -->
+  <rect x="2.25" y="9.0" width="11.9" height="1.3" rx="0.28" fill="#FFFFFF" stroke="#E9EDF5" stroke-width="0.08"/>
+  <rect x="2.75" y="9.46" width="0.42" height="0.42" rx="0.1" fill="url(#blueGrad)"/>
+  <path d="M2.86 9.67 L2.98 9.79 L3.16 9.57" stroke="#FFFFFF" stroke-width="0.11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="3.65" y="9.49" width="3.9" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="8.2" y="9.49" width="3.3" height="0.22" rx="0.11" fill="url(#mutedGrad)"/>
+
+  <rect x="2.25" y="10.8" width="11.9" height="1.3" rx="0.28" fill="#FFFFFF" stroke="#E9EDF5" stroke-width="0.08"/>
+  <rect x="2.75" y="11.26" width="0.42" height="0.42" rx="0.1" fill="#FFFFFF" stroke="url(#blueGrad)" stroke-width="0.12"/>
+  <rect x="3.65" y="11.29" width="4.2" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="8.55" y="11.29" width="2.95" height="0.22" rx="0.11" fill="url(#mutedGrad)"/>
+
+  <rect x="2.25" y="12.6" width="11.9" height="1.3" rx="0.28" fill="#FFFFFF" stroke="#E9EDF5" stroke-width="0.08"/>
+  <rect x="2.75" y="13.06" width="0.42" height="0.42" rx="0.1" fill="#FFFFFF" stroke="url(#blueGrad)" stroke-width="0.12"/>
+  <rect x="3.65" y="13.09" width="3.45" height="0.24" rx="0.12" fill="url(#darkGrad)"/>
+  <rect x="7.75" y="13.09" width="3.75" height="0.22" rx="0.11" fill="url(#mutedGrad)"/>
+
+  <!-- School logo badge -->
+  <circle cx="15.65" cy="15.0" r="2.0" fill="#FFFFFF" stroke="url(#darkGrad)" stroke-width="0.54"/>
+  <path d="M17.22 14.09 A1.58 1.58 0 1 0 17.22 15.89 L16.52 15.37 A0.72 0.72 0 1 1 16.52 14.61 Z" fill="url(#orangeGrad)"/>
+  <circle cx="15.65" cy="15.0" r="0.42" fill="url(#orangeGrad)"/>
+</svg>

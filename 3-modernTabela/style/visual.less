@@ -1,0 +1,230 @@
+.tabela-modern-host {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.tabela-modern-host * {
+    box-sizing: border-box;
+}
+
+.tabela-modern {
+    color: var(--tm-text-color, #1e254e);
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tm-card {
+    border: 1px solid;
+    box-shadow: 0 10px 28px rgba(19, 30, 70, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tm-topbar {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    min-height: 28px;
+}
+
+.tm-title-wrap {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    min-width: 0;
+}
+
+.tm-title {
+    color: var(--tm-header-color, #151b4d);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tm-title-icon {
+    color: #f7b731;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tm-actions {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.tm-icon-button {
+    background: transparent;
+    border: 0;
+    color: var(--tm-accent-color, #1d6dff);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 2px;
+}
+
+.tm-icon-button {
+    font-size: 16px;
+    min-width: 18px;
+}
+
+.tm-table-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.tm-table {
+    border-collapse: collapse;
+    color: var(--tm-text-color, #1e254e);
+    font-size: var(--tm-font-size, 13px);
+    table-layout: auto;
+    width: 100%;
+}
+
+.tm-table th {
+    color: var(--tm-header-color, #151b4d);
+    font-size: var(--tm-header-font-size, 12px);
+    font-weight: 650;
+    padding: 0 10px 12px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tm-table td {
+    border-top: 1px solid var(--tm-divider-color, #e9edf5);
+    font-weight: 500;
+    height: var(--tm-row-height, 52px);
+    overflow: hidden;
+    padding: 8px 10px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.tm-table tbody tr {
+    cursor: default;
+    transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+
+.tm-table tbody tr:hover {
+    background: rgba(29, 109, 255, 0.035);
+}
+
+.tm-table tbody tr:focus {
+    outline: 2px solid rgba(29, 109, 255, 0.35);
+    outline-offset: -2px;
+}
+
+.tm-position-col {
+    text-align: center !important;
+    width: 48px;
+}
+
+.tm-position {
+    color: var(--tm-header-color, #151b4d);
+    font-weight: 650;
+}
+
+.tm-image-col {
+    padding-left: 6px !important;
+    padding-right: 8px !important;
+    width: 50px;
+}
+
+.tm-avatar {
+    align-items: center;
+    color: #5a43c8;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tm-avatar img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.tm-number-col {
+    text-align: right !important;
+}
+
+.tm-conditional {
+    align-items: center;
+    display: inline-flex;
+    gap: 9px;
+    justify-content: flex-end;
+    min-width: 0;
+    width: 100%;
+}
+
+.tm-conditional-value {
+    color: var(--tm-header-color, #151b4d);
+    font-weight: 600;
+}
+
+.tm-conditional-icons {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.tm-table tfoot td {
+    background: var(--tm-footer-bg, #eef5ff);
+    border-top: 0;
+    color: var(--tm-footer-color, #1467ff);
+    font-size: 15px;
+    font-weight: 750;
+    height: 44px;
+}
+
+.tm-table tfoot td:first-child {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.tm-table tfoot td:last-child {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tm-footer-label {
+    text-align: left !important;
+}
+
+.tm-empty,
+.tm-empty-cell {
+    align-items: center;
+    color: #667085;
+    display: flex;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+    height: 100%;
+    justify-content: center;
+    padding: 18px;
+    text-align: center;
+}
+
+.tm-empty-cell {
+    display: table-cell;
+}

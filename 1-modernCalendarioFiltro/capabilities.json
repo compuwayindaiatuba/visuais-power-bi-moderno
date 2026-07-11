@@ -1,0 +1,447 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Data",
+      "name": "date",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Menu",
+      "name": "menu",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "Geral",
+      "properties": {
+        "filter": {
+          "type": {
+            "filter": true
+          }
+        }
+      }
+    },
+    "menuFilter": {
+      "displayName": "Menu",
+      "properties": {
+        "enabled": {
+          "type": {
+            "bool": true
+          }
+        },
+        "menuName": {
+          "type": {
+            "text": true
+          }
+        }
+      }
+    },
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "popupHeight": {
+          "displayName": "Altura do popup",
+          "type": {
+            "numeric": true
+          }
+        },
+        "containerPadding": {
+          "displayName": "Espaçamento externo",
+          "type": {
+            "numeric": true
+          }
+        },
+        "calendarPadding": {
+          "displayName": "Espaçamento calendário",
+          "type": {
+            "numeric": true
+          }
+        },
+        "calendarGap": {
+          "displayName": "Espaçamento interno",
+          "type": {
+            "numeric": true
+          }
+        },
+        "fontFamily": {
+          "type": {
+            "text": true
+          }
+        },
+        "fontWeight": {
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Normal",
+                "value": "400"
+              },
+              {
+                "displayName": "Medio",
+                "value": "500"
+              },
+              {
+                "displayName": "Semibold",
+                "value": "600"
+              },
+              {
+                "displayName": "Bold",
+                "value": "700"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "card": {
+      "displayName": "Cartão",
+      "properties": {
+        "cardHeight": {
+          "displayName": "Altura mínima",
+          "type": {
+            "numeric": true
+          }
+        },
+        "cardPadding": {
+          "displayName": "Espaçamento",
+          "type": {
+            "numeric": true
+          }
+        },
+        "cardRadius": {
+          "displayName": "Arredondamento",
+          "type": {
+            "numeric": true
+          }
+        },
+        "titleFontSize": {
+          "displayName": "Fonte título",
+          "type": {
+            "numeric": true
+          }
+        },
+        "valueFontSize": {
+          "displayName": "Fonte período",
+          "type": {
+            "numeric": true
+          }
+        },
+        "iconFontSize": {
+          "displayName": "Tamanho ícone",
+          "type": {
+            "numeric": true
+          }
+        },
+        "cardBackground": {
+          "displayName": "Fundo",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "cardBorderColor": {
+          "displayName": "Cor da borda",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "titleColor": {
+          "displayName": "Cor título",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "valueColor": {
+          "displayName": "Cor período",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "calendar": {
+      "displayName": "Calendário",
+      "properties": {
+        "popupBackground": {
+          "displayName": "Fundo popup",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "popupBorderColor": {
+          "displayName": "Borda popup",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "toolbarFontSize": {
+          "displayName": "Fonte mês/ano",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dropdownWidth": {
+          "displayName": "Largura mês/ano",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dropdownHeight": {
+          "displayName": "Altura mês/ano",
+          "type": {
+            "numeric": true
+          }
+        },
+        "weekdayFontSize": {
+          "displayName": "Fonte semana",
+          "type": {
+            "numeric": true
+          }
+        },
+        "weekdayColor": {
+          "displayName": "Cor semana",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "days": {
+      "displayName": "Dias",
+      "properties": {
+        "daySize": {
+          "displayName": "Tamanho do dia",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dayGap": {
+          "displayName": "Espaço entre dias",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dayFontSize": {
+          "displayName": "Fonte dos dias",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dayRadius": {
+          "displayName": "Arredondamento",
+          "type": {
+            "numeric": true
+          }
+        },
+        "dayBackground": {
+          "displayName": "Fundo disponível",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "dayTextColor": {
+          "displayName": "Texto disponível",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "dayHoverBackground": {
+          "displayName": "Fundo hover",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedBackground": {
+          "displayName": "Fundo selecionado",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "selectedTextColor": {
+          "displayName": "Texto selecionado",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "rangeBackground": {
+          "displayName": "Fundo intervalo",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "rangeTextColor": {
+          "displayName": "Texto intervalo",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "disabledOpacity": {
+          "displayName": "Opacidade indisponível",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "buttons": {
+      "displayName": "Botões",
+      "properties": {
+        "buttonFontSize": {
+          "displayName": "Fonte",
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonPaddingX": {
+          "displayName": "Largura interna",
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonPaddingY": {
+          "displayName": "Altura interna",
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonRadius": {
+          "displayName": "Arredondamento",
+          "type": {
+            "numeric": true
+          }
+        },
+        "buttonBackground": {
+          "displayName": "Fundo botão",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "buttonTextColor": {
+          "displayName": "Texto botão",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "applyBackground": {
+          "displayName": "Fundo aplicar",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "applyTextColor": {
+          "displayName": "Texto aplicar",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "date": {
+            "max": 4
+          },
+          "menu": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "date"
+          },
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "for": {
+                "in": "menu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "privileges": []
+}
